@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 500vh;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #0065c3;
+  align-items: center;
+  font-family: Sofia Pro Black, Helvetica Neue, Helvetica, Arial, sans-serif;
+  z-index: 1;
+  top: 0;
+  position: sticky;
+  border-bottom: 2px solid #0065c3;
+}
+.left-items {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  align-items: center;
+}
+
+.logo-left {
+  transition: 0.2s;
+}
+.logo-left:hover {
+  transform: rotate(720deg);
+}
+.left-links {
+  margin-left: 40px;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px 15px;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+}
+a:hover {
+  color: navy;
+}
+.right-button {
+  border: 1.5px solid white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  transition: 0.5s;
+}
+.right-button:hover {
+  border: none;
+  color: black;
+  transform: scale(1.05);
+}
+.right-button:hover span {
+  background: linear-gradient(45deg, #0065c3, white);
+
+  width: 100%;
+  transform: scale(1.1);
+}
+span {
+  content: "";
+  position: absolute;
+
+  top: 0;
+  width: 0%;
+  left: 0;
+  height: 100%;
+  border-radius: 20px;
+  transition: 0.5s;
+  z-index: -1;
+}
+
+/* firtst container */
+.first-container {
+  display: flex;
+  background-image: url(https://www.pepsi.com/en-us/uploads/images/nitro/Desktop_Background.png);
+  background-size: cover;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.product-item img {
+  max-width: 70%;
+  height: auto;
+}
+.ls img {
+  max-width: 60%;
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .product-item .one {
+  margin-left: 60px;
+}
+ */
+.left-product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-items {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: Cervo Neue Black, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.column {
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 1.3rem;
+  background-color: white;
+  color: #0065c3;
+}
+
+/* second-tainer */
+.second-container {
+  background-color: #0065c3;
+  display: flex;
+}
+.second-containerchild {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.betterwithpepsi {
+  color: white;
+}
+
+/* .right-imagesec {
+  width: 100%;
+  height: 100%;
+} */
+/* .thumb-nail img {
+  width: 100%;
+}
+.thumb-nail {
+  background-color: blue;
+  opacity: 0.8;
+} */
+.left-imagesec {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.third-container {
+  background-color: black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-container-rightdiv {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-thumnbnail {
+  display: flex;
+  justify-content: space-between;
+}
+.thumbnail-title {
+  color: white;
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+  font-family: font-family, Sofia Pro Regular, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+}
+.fourth-container {
+  display: flex;
+}
+.thatwhatilike {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-family: Sofia Pro Black, Helvetica Neue, Helvetica, Arial, sans-serif;
+  bottom: 0;
+  position: absolute;
+  padding: 2rem;
+}
+.sixth-container {
+  display: flex;
+  background: #117adc;
+  padding: 2rem 0 0 2rem;
+  align-items: center;
+}
+
+.seven-container {
+  background-color: rgb(22, 94, 162);
+  display: flex;
+  padding: 2rem 2.5rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sevendiv-left {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 900;
+  font-family: "Anton", sans-serif;
+}
+.sevendiv-left-father {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.sevendivptag {
+  font-family: Sofia Pro Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+  font-weight: 600;
+}
+.sevendiv-button {
+  border: 2px white solid;
+  color: white;
+  width: 130px;
+  padding: 0.5rem 1.5rem;
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: Sofia Pro Regular, Helvetica Neue, Helvetica, Arial, sans-serif;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* eight-container */
+.stayon h1 {
+  font-size: 2.75rem;
+  text-align: center;
+  font-weight: 800;
+
+  color: #0065c3;
+  font-family: Cervo Neue Black, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+/* Important part about of hover rotate n overlay */
+.eightdiv-hover {
+  display: flex;
+  justify-content: center;
+}
+.eighthover {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  transition: 2s;
+  transition-delay: 0.2s;
+
+  cursor: pointer;
+}
+.eighthover img {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(0);
+}
+
+.eighthover img:hover {
+  transform: rotate(5deg) scale(1.2);
+  filter: grayscale(0.7);
+}
+/* .eighthover::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: #117adc;
+  background-image: url(https://www.pepsi.com/en-us/assets/images/icon-twitter.19d7e9de57475b8de6a58e97e7f52dfb.svg);
+  display: block;
+  background-size: cover;
+  position: absolute;
+  left: 30px;
+} */
+.footer {
+  padding: 1rem 1rem 3rem 1rem;
+  background-color: #0065c3;
+  font-family: Sofia Pro Black, Helvetica Neue, Helvetica, Arial, sans-serif;
+  display: flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+ol {
+  list-style: none;
+}
+ol li a {
+  line-height: 2;
+}
+ol li a:hover {
+  color: navy;
+}
+.footer-logo img {
+  width: 100px;
+  image-resolution: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.footer-logo img:hover {
+  transform: rotate(360deg);
+}
+.footer-button {
+  border: 2px white solid;
+  color: #fff;
+  font-size: 7px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 1.5rem;
+}
+.footer-button:hover {
+  background-color: navy;
+  transform: scale(1.05);
+  border: none;
+}
+.twitter-logo {
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  color: white;
+}
+.twitter-logo:hover {
+  color: rgba(84, 84, 84, 0.7);
+}
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.icons-div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
